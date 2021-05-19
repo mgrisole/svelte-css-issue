@@ -1,0 +1,28 @@
+.g-box {
+  position: relative;
+  z-index: 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 1px solid var(--vtmn-color_grey-light-1);
+    border-radius: var(--vtmn-spacing_2);
+    z-index: -1;
+  }
+
+  &:hover:after {
+    border-color: var(--vtmn-color_black);
+  }
+
+  &.selected:after {
+    border: 2px solid var(--vtmn-color_black);
+  }
+
+  &.blue-selection.selected:after {
+    border: 2px solid var(--vtmn-color_brand-digital);
+  }
+}

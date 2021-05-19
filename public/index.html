@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Oneff widget playground</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+
+	<script src='/build/bundle.js'></script>
+
+	<style>
+		body {
+			font-size: 16px;
+		}
+
+		#container {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 1rem;
+		}
+	</style>
+</head>
+
+<body>
+
+<div id="container" style="display: flex; align-items: center; justify-content: center;">
+	<div style="margin-left: 2rem;">
+		<div>
+			<div>QUECHUA</div>
+			<div>Ref. 8344514</div>
+		</div>
+		<div>Wanderschuhe arpenaz 100 mid warm blau herren</div>
+		<div style="margin-top: 2rem;" id="product-page-widget-container"></div>
+	</div>
+</div>
+
+<script>
+
+	new OneshopProductPageWidget({
+		product: {
+			sku_id: "66dd9112-12a3-4219-a2dc-7e2872789b16",
+			sizes: [
+				{
+					label: "38",
+					size_id: "767678"
+				},
+				{
+					label: "39",
+					size_id: "767679"
+				},
+				{
+					label: "40",
+					size_id: "767680"
+				},
+				{
+					label: "41",
+					size_id: "767681"
+				}
+			]
+		},
+		location_context: {
+			country: "AT"
+		},
+		options: {
+			directionality: "LEFT_TO_RIGHT",
+			// price_format: [
+			// 	'en-US',
+			// 	{
+			// 		style: 'currency', currency: 'USD'
+			// 	}
+			// ]
+		} });
+
+</script>
+</body>
+</html>
